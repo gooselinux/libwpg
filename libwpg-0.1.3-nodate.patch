@@ -1,0 +1,14 @@
+Avoid multilib conflict in Doxygen documentation with timestamp.
+
+Lubomir Rintel <lkundrak@v3.sk>
+
+diff -up libwpg-0.1.3/docs/doxygen/footer.html.in.nodate libwpg-0.1.3/docs/doxygen/footer.html.in
+--- libwpg-0.1.3/docs/doxygen/footer.html.in.nodate	2009-07-28 18:16:27.000000000 +0200
++++ libwpg-0.1.3/docs/doxygen/footer.html.in	2009-07-28 18:17:06.000000000 +0200
+@@ -1,5 +1,5 @@
+ <hr size="1"><address style="align: right;"><small>
+-Generated on $datetime for $projectname by <a href="http://www.doxygen.org/index.html">
++Generated for $projectname by <a href="http://www.doxygen.org/index.html">
+ doxygen</a> $doxygenversion</small></address>
+ </body>
+ </html>
